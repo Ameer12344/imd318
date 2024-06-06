@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .navbar a {
+            padding: 14px 20px;
+            display: inline-block;
+            color: #333;
+        }
+
+        .navbar .dropdown-content a {
+            padding: 8px 16px;
+        }
+
+        .education {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            margin: 0 auto;
+            max-width: 1200px;
+        }
+
+        .arrow {
+            cursor: pointer;
+            background-color: transparent;
+            border: none;
+            font-size: 2rem;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .prev {
+            left: -40px;
+        }
+
+        .next {
+            right: -40px;
+        }
+
+        .col {
+            flex: 1;
+            max-width: 45%;
+            margin: 0 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .education-block {
+            text-align: center;
+            margin-bottom: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .education-block img {
+            width: 100%;
+            height: auto;
+            max-width: 300px; /* Add this to limit the max width of the images */
+        }
+
+        .education-block p {
+            text-align: center;
+            max-width: 600px;
+        }
+
+        @media (max-width: 768px) {
+            .col {
+                max-width: 90%;
+            }
+
+            .prev, .next {
+                display: none;
+            }
+
+            .row {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="logo">MyWebsite</a>
+        <nav class="navbar">
+            <div class="dropdown">
+                <a href="index.html" class="active">Home</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="about.html">About Me</a>
+                <div class="dropdown-content">
+                    <a href="#playlist">My Favourite Playlist</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="education.html">Education</a>
+                <div class="dropdown-content">
+                    <a href="#sk-seri-suria">SK Seri Suria</a>
+                    <a href="#smk-seksyen-1">SMK Seksyen 1 Bandar Kinrara</a>
+                    <a href="#uitm-kedah">UITM Kedah</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="experience.html">Experience</a>
+                <div class="dropdown-content">
+                    <a href="#subway">Subway Bandar Kinrara</a>
+                    <a href="#food-delivery">Food Delivery</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="family.html">Family</a>
+                <div class="dropdown-content">
+                    <a href="#parents">Parents</a>
+                    <a href="#siblings">Siblings</a>
+                </div>
+            </div>
+            <a href="friend.html">Friends</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <section id="education" class="education">
+        <div class="education-container">
+            <br>
+            <h2>Education</h2> <br><br>
+        </div>
+        <div class="row">
+            <button class="arrow prev" onclick="showPrev()">
+                &#10094;
+            </button>
+            <div class="col" id="content-1">
+                <div class="education-block">
+                    <img src="Image/skss.jpg" alt="SK Seri Suria">
+                    <h4><a href="https://www.facebook.com/skserisuria/?locale=ms_MY" target="_blank">SK Seri Suria (2010-2015)</a></h4>
+                    <p>I began my formal education at SK Seri Suria, where I spent six formative years from 2010 to 2015. During my time at SK Seri Suria, I developed a strong foundation in various academic disciplines, including mathematics, science, languages, and social studies. The school's supportive environment and dedicated teachers played a crucial role in nurturing my curiosity and love for learning.</p>
+                    <p>At SK Seri Suria, I also participated in a range of extracurricular activities, which helped me to develop important life skills such as teamwork, leadership, and time management. Whether it was through involvement in sports teams, cultural clubs, or school events, these experiences were instrumental in shaping my holistic development and instilling in me a sense of community and responsibility.</p>
+                </div>
+            </div>
+            
+            <div class="col" id="content-2">
+                <div class="education-block">
+                    <img src="Image/images.jpg" alt="SMK Seksyen 1 Bandar Kinrara">
+                    <h4><a href="https://www.facebook.com/SMKS1BandarKinrara/?locale=ms_MY" target="_blank">SMK Seksyen 1 Bandar Kinrara (2016-2020)</a></h4>
+                    <p>I attended SMK Seksyen 1 Bandar Kinrara from 2016 to 2020, where I was enrolled in the Science Stream. During my time there, I had the opportunity to immerse myself in a rigorous academic environment that fostered my interest in scientific subjects. The comprehensive curriculum covered a wide range of topics, including Physics, Chemistry, Biology, and Additional Mathematics, providing me with a solid foundation in both theoretical knowledge and practical skills.</p>
+                    <p>Being in the Science Stream allowed me to engage in various laboratory experiments and hands-on projects, which enhanced my understanding of scientific concepts and nurtured my problem-solving abilities. I was also involved in numerous school activities and science fairs, which helped develop my teamwork and communication skills.</p>
+                </div>
+            </div>
+            
+            <div class="col" id="content-3" style="display:none;">
+                <div class="education-block">
+                    <img src="Image/kedah.jpg" alt="UITM Merbok,Kedah">
+                    <h4><a href="https://kedah.uitm.edu.my/" target="_blank">UITM Merbok,Kedah (2022-Current)</a></h4>
+                    <p>I am currently pursuing a degree in Information Management at UiTM Merbok, Kedah. Since 2022, my academic journey has been focused on acquiring comprehensive knowledge and skills in managing information effectively.</p>
+                    <p>Now in my fifth semester, I have gained a solid foundation in various aspects of information science, including data management, information systems, and digital archiving. My coursework has equipped me with both theoretical insights and practical expertise, preparing me for a dynamic career in the information management field.</p>
+                </div>
+            </div>
+            <button class="arrow next" onclick="showNext()">
+                &#10095;
+            </button>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Ameer Nur Redwan. All rights reserved.</p>
+        <div class="contact-info">
+            <p>Phone: +60 13 366 4878</p>
+            <p>Email: <a href="mailto:ameerredwan03@gmail.com">ameerredwan03@gmail.com</a></p>
+        </div>
+        <div class="footer-sci">
+            <a href="https://www.facebook.com/ameer.redwan.9/" target="_blank"><i class='bx bxl-facebook'></i></a>
+            <a href="https://www.instagram.com/ameernr_/" target="_blank"><i class='bx bxl-instagram'></i></a>
+            <a href="https://x.com/Ameernr_" target="_blank"><i class='bx bxl-twitter'></i></a>
+        </div>
+    </footer>
+    <script>
+        let currentContent = 1;
+
+        function showNext() {
+            document.getElementById('content-' + currentContent).style.display = 'none';
+            currentContent = currentContent === 1 ? 3 : 1;
+            document.getElementById('content-' + currentContent).style.display = 'block';
+        }
+
+        function showPrev() {
+            document.getElementById('content-' + currentContent).style.display = 'none';
+            currentContent = currentContent === 3 ? 1 : 3;
+            document.getElementById('content-' + currentContent).style.display = 'block';
+        }
+    </script>
+</body>
+</html>

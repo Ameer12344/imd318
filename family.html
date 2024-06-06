@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .navbar a {
+            padding: 14px 20px;
+            display: inline-block;
+            color: #333;
+        }
+
+        .navbar .dropdown-content a {
+            padding: 8px 16px;
+        }
+
+        .family {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .title {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .box {
+            margin-bottom: 20px;
+        }
+
+        .box-content {
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .photo-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .photo-card {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .photo-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .photo-overlay {
+            position: absolute;
+            bottom: 0;
+            background: rgba(0,0,0,0.5);
+            color: #fff;
+            width: 100%;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #0a233a;
+        }
+
+        .contact-info {
+            margin-bottom: 10px;
+        }
+
+        .footer-sci a {
+            color: #333;
+            margin: 0 10px;
+            font-size: 1.5rem;
+        }
+
+        .footer-sci a:hover {
+            color: #007BFF;
+        }
+    </style>
+</head>
+<body>
+    <body>
+        <header class="header">
+            <a href="index.html" class="logo">MyWebsite</a>
+        <nav class="navbar">
+            <div class="dropdown">
+                <a href="index.html" class="active">Home</a>
+                </div>
+            </div>
+                <div class="dropdown">
+                    <a href="about.html">About Me</a>
+                    <div class="dropdown-content">
+                        <a href="#playlist">My Favourite Playlist</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="education.html">Education</a>
+                    <div class="dropdown-content">
+                        <a href="#sk-seri-suria">SK Seri Suria</a>
+                        <a href="#smk-seksyen-1">SMK Seksyen 1 Bandar Kinrara</a>
+                        <a href="#uitm-kedah">UITM Kedah</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="experience.html">Experience</a>
+                    <div class="dropdown-content">
+                        <a href="#subway">Subway Bandar Kinrara</a>
+                        <a href="#food-delivery">Food Delivery</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="family.html">Family</a>
+                    <div class="dropdown-content">
+                        <a href="#parents">Parents</a>
+                        <a href="#siblings">Siblings</a>
+                    </div>
+                </div>
+                <a href="friend.html">Friends</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+    </header>
+    <section id="family" class="family">
+        <div class="container">
+            <h2 class="title"><br>Family</h2>
+            <div class="box">
+                <div class="box-content">
+                    <div class="photo-grid">
+                        <div class="photo-card">
+                            <img src="Image/family7.jpg" alt="Family Member 1">
+                            <div class="photo-overlay">
+                            </div>
+                        </div>
+                        <div class="photo-card">
+                            <img src="Image/family8.jpg" alt="Family Member 2">
+                            <div class="photo-overlay">
+                            </div>
+                        </div>
+                        <div class="photo-card">
+                            <img src="Image/family9.jpg" alt="Family Member 3">
+                            <div class="photo-overlay">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-content">
+                    <h4><br>My Family</h4>
+                    <p>Family is a significant part of my life. They have always been my support system and inspiration. Here's a bit about my family:</p>
+                    <ul>
+                        <li>My parents have always encouraged me to pursue my dreams and supported me in my educational endeavors.</li>
+                        <li>I have two siblings who are my best friends and greatest allies.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="parents" class="family">
+        <div class="container">
+            <h2 class="title">Parents</h2>
+            <div class="box">
+                <div class="box-content">
+                    <div class="photo-grid">
+                        <div class="photo-card">
+                            <img src="Image/family4.jpg" alt="Parents">
+                            <div class="photo-overlay">
+                                <p>Zainudin bin Othman</p>
+                            </div>
+                        </div>
+                        <div class="photo-grid">
+                            <div class="photo-card">
+                                <img src="Image/family6.jpg" alt="Parents">
+                                <div class="photo-overlay">
+                                    <p>Siti Nor Asiah binti Abu Kassim</p>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="siblings" class="family">
+        <div class="container">
+            <h2 class="title">Siblings</h2>
+            <div class="box">
+                <div class="box-content">
+                    <div class="photo-grid">
+                        <div class="photo-card">
+                            <img src="Image/family1.jpg" alt="Siblings">
+                            <div class="photo-overlay">
+                                <p>Siti Nur Aliya' Aqilah binti Zainudin</p>
+                            </div>
+                        </div>
+                        <div class="photo-grid">
+                            <div class="photo-card">
+                                <img src="Image/family2.jpg" alt="Siblings">
+                                <div class="photo-overlay">
+                                    <p>Muhd Naquib Najmi bin Zainudin</p>
+                                </div>
+                            </div>
+                            <div class="photo-grid">
+                                <div class="photo-card">
+                                    <img src="Image/family3.jpg" alt="Siblings">
+                                    <div class="photo-overlay">
+                                        <p>Muhd Ikhwan Hakimi bin Zainudin</p>
+                                    </div>
+                                </div>
+                            <div class="photo-grid">
+                                <div class="photo-card">
+                                    <img src="Image/family5.jpg" alt="Siblings">
+                                    <div class="photo-overlay">
+                                        <p>Muhd Edzham Asyran bin Zainudin</p>
+                                    </div>
+                                </div>    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Ameer Nur Redwan. All rights reserved.</p>
+        <div class="contact-info">
+            <p>Phone: +60 13 366 4878</p>
+            <p>Email: <a href="mailto:ameerredwan03@gmail.com">ameerredwan03@gmail.com</a></p>
+        </div>
+        <div class="footer-sci">
+            <a href="https://www.facebook.com/ameer.redwan.9/" target="_blank"><i class='bx bxl-facebook'></i></a>
+            <a href="https://www.instagram.com/ameernr_/" target="_blank"><i class='bx bxl-instagram'></i></a>
+            <a href="https://x.com/Ameernr_" target="_blank"><i class='bx bxl-twitter'></i></a>
+        </div>
+    </footer>
+</body>
+</html>
